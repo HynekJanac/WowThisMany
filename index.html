@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Visualizer</title>
+
+    <link rel="icon" type="image/svg+xml" href="Img/Logo.svg">
+    <link rel="mask-icon" href="Img/Logo.svg">
 
     <link rel="stylesheet" href="Universal.css">
     <link rel="stylesheet" href="Root.css">
@@ -15,14 +20,34 @@
     
 
 </head>
+
 <body>
-    <main>
+    <div id="preloader" class="preloader" style="display: none;"> 
+        <div class="loader"></div>
+        <p class="crunch ">Crunching data...</p>
+    </div>
+
+
+    <main id="menu" style="display: block;">
     <h1 class="heading">Visualize how many people are following you.</h1>
     <div class="form-wrap">
         <input id="form" class="form" placeholder="Type in number of your followers" type="Number of your followers">
-        <div class="warning">Please use only numbers</div>
-        <button class="button" onclick="">Visualize</button>
+        <div id="warning" class="warning">Please use only numbers</div>
+        <button class="button" onclick="visualize()">Visualize</button>
     </div>
+    </main>
+
+    <main id="vis" style="display: none;">
+        <h1 id="followers" class="heading">You have xxx followers</h1>
+        <h2 class="comparasion" id="comparasion">Half of canda</h2>
+        
+        <div class="results-wrap">
+            <img id="imgvis" class="img" ca src="https://upload.wikimedia.org/wikipedia/commons/9/9a/The_view_from_the_Grandstand_Level_at_New_Yankee_Stadium.jpg" alt="">
+            <p id="imagesource" class="imgsource"></p>
+            <button class="button" onclick="revisualize()">Visualize Again</button>
+        </div>
+
+
     </main>
     
 </body>
