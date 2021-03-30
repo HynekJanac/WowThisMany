@@ -17,3 +17,4 @@ function visualization(){
     document.getElementById("followers").innerHTML = "You have "+String(followers)+" followers"
 
 }
+

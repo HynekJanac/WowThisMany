@@ -19,7 +19,17 @@
     <script defer src="Visualizer.js"></script>
     <script>
 
-    window.onload = setTimeout(function(){ document.getElementById("preloader").style.display = "none"; }, 3000)
+    window.onload = setTimeout(
+        function(){
+        var op = 1;  // initial opacity
+        var timer = setInterval(function (){
+        if (op <= 0.1){
+            clearInterval(timer);
+            document.getElementById("preloader").style.display = 'none';}
+
+        document.getElementById("preloader").style.opacity = op;
+        document.getElementById("preloader").style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op -= op * 0.1;}, 50);}, 2500)
 
     </script>
     
