@@ -18,6 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
     <script src="Dark_mode.js"></script>
     <script defer src="Visualizer.js"></script>
+    <script defer src="https://kit.fontawesome.com/e7d2d6d226.js" crossorigin="anonymous"></script>
+    <script defer src="URL.js"></script>
+    <script defer src="CopyPaste.js"></script>
     <script>
 
     window.onload = setTimeout(
@@ -55,11 +58,22 @@
         <div class="results-wrap">
             <img id="imgvis" class="img" ca src="https://upload.wikimedia.org/wikipedia/commons/9/9a/The_view_from_the_Grandstand_Level_at_New_Yankee_Stadium.jpg" alt="">
             <p id="imagesource" class="imgsource"></p>
-            <a class="button" href="https://visualizefollowers.netlify.app/">Visualize Again</a>
-            <a href="https://www.buymeacoffee.com/hynekjanac" class="button" target="_blank">Buy me coffee</a>
-            <!--<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="hynekjanac" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF5F5F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>-->
+            
+            <h2 class="comparasion" id="comparasion2">Share this with your friends</h2>
+            <footer class="share-wrap">
+                <a class="social" href="#" onclick="CopyLink()"><i class="fas fa-link"></i></a>
+                <a id="twitter_share" class="social" href="https://twitter.com/intent/tweet?text=Headline%20https://www.hynekjanac.com/Articles/..." target="blank"><i class="fab fa-twitter" ></i></a>
+                <a id="facebook_share" class="social" href="https://www.facebook.com/sharer/sharer.php?u=https://www.hynekjanac.com/Articles/...;src=sdkpreparse" target="_blank"><i class="fab fa-facebook"></i></a>
+            </footer>
 
-            </div>
+            <input type="text"  value="https://www.hynekjanac.com/Articles/..." id="Copy" style="display: none;">
+            <h2 class="comparasion" id="comparasion2">Or</h2>
+            <a class="button-vis" href="https://visualizefollowers.netlify.app/">Visualize again</a>
+            <h2 class="comparasion" id="comparasion2">Or</h2>
+            <a href="https://www.buymeacoffee.com/hynekjanac" class="button-vis" target="_blank">Buy me coffee</a>
+            <h2 class="comparasion" id="comparasion2">Or</h2>
+            <a href="https://www.hynekjanac.com" class="button-vis" target="_blank">Check out my website</a>
+        </div>
     </main> 
 </body>
 </html>

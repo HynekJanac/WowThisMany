@@ -49,13 +49,123 @@
 
 .img{
     border-radius: 20px;
-    
+    width: 90%;
     max-height: 1050px;
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
 }
-@media (max-width: 850px){
 
+.button-vis{
+    display: block;
+    color: var(--text-color);
+    background-color: var(--main-color);
+    font-family: "Nunito";
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 73px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: color .30s ease-in-out;
+    transition: background-color .30s ease-in-out;
+}
+
+.button-vis:hover{
+    color: var(--main-color);
+    background-color: var(--text-color);
 
 }
+
+.share-wrap{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 70px);
+	text-align: center;
+	justify-content: center;
+	column-gap: 80px;
+	row-gap: 16px;
+	margin-bottom: 5px;
+}
+
+footer a{
+	padding: 20px;
+	background-color: var(--main-color);
+	border-radius: 50%;
+	transition: background-color .30s ease-in-out;
+	transition: transform .30s ease-in-out;
+}
+.share-wrap{
+	column-gap: 32px;
+}
+.social:hover{
+	background-color: var(--secondary-color);
+	transform: translateY(-3px);
+}
+.fab{
+	color: var(--secondary-color);
+	font-size: 30px;
+	transition: color .30s ease-in-out;
+	transition: transform .30 ease-in-out;
+}
+.social:hover > .fab {
+	color: var(--main-color);
+}
+
+.fas{
+	color: var(--secondary-color);
+	font-size: 30px;
+	text-align: center;
+	transition: color .30s ease-in-out;
+	transition: transform .30 ease-in-out;
+}
+
+.social:hover > .fas {
+	color: var(--main-color);
+}
+
+@media (max-width: 850px){
+    
+    .bunchofdots{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .form-wrap{
+        text-align: center;
+        margin-top: 100px;
+    }
+    
+    .form{ 
+        width: 95%;
+        height: 60px;
+        padding: 5px;
+        border-radius: 73px;
+        border: none;
+        font-size: 25px;
+        margin-bottom: 75px;
+    }
+    
+    .warning{
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .button-vis{
+        border-radius: 73px;
+        width: 70%;
+        padding: 20px;
+        font-size: 25px;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    
+    
+    }
