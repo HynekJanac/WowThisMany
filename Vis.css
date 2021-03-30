@@ -1,15 +1,61 @@
 .bunchofdots{
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(10px,1fr));
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 10px);
+	text-align: center;
+	justify-content: center;
+	column-gap: 15px;
+	padding-left: 50px;
+    padding-right: 50px;
 }
 
-.dot{
+.dot-big{
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: white;
+    color: white;
+    border: solid white;
+}
+
+.dot-middle{
     height: 5px;
     width: 5px;
     border-radius: 50%;
     background-color: white;
     color: white;
     border: solid white;
+}
+
+.dot-small{
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    background-color: white;
+    color: white;
+    border: solid white;
+
+}
+
+.comparasion{
+    text-align: center;
+    color: var(--text-color);
+    font-size: 30px;
+}
+
+.results-wrap{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.img{
+    border-radius: 20px;
+    
+    max-height: 1050px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 850px){
+
 
 }
