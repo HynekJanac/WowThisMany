@@ -13,7 +13,7 @@ function redirect(){
 }
 
 function visualization(){
-    const followers = Number(urlParams.get('followers'))
+    const followers = new URLSearchParams(window.location.search).get("followers")
     document.getElementById("followers").innerHTML = "You have "+String(followers)+" followers"
 
 }

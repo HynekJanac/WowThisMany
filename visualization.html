@@ -17,12 +17,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
     <script src="Dark_mode.js"></script>
     <script defer src="Visualizer.js"></script>
+    <script>
+
+    window.onload = setTimeout(function(){ document.getElementById("preloader").style.display = "none"; }, 3000)
+
+    </script>
     
 
 </head>
 
-<body>
-    <div id="preloader" class="preloader" style="display: none;"> 
+<body onload="visualization()">
+    
+    <div id="preloader" class="preloader" style="display: block;"> 
         <div class="loader"></div>
         <p class="crunch ">Crunching data...</p>
     </div>
