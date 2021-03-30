@@ -15,8 +15,15 @@ function redirect(){
 function visualization(){
     const followersinput = new URLSearchParams(window.location.search).get("followers")
     var followers = Math.round(Number(followersinput))
-    document.getElementById("followers").innerHTML = "You have "+String(followers)+" followers"
+
     
+
+    if (followers == 1){
+        document.getElementById("followers").innerHTML = "You have "+String(followers)+" follower"
+    }
+    else{
+    document.getElementById("followers").innerHTML = "You have "+String(followers)+" followers"
+    }
     if (followers <= 75000){
         if (followers <= 500){
             document.getElementById("dots").innerHTML ='<p class="dot-big"></p>'.repeat(followers);
