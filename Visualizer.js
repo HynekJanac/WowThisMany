@@ -13,26 +13,28 @@ function redirect(){
 }
 
 function visualization(){
-    const followers = new URLSearchParams(window.location.search).get("followers")
+    const followersinput = new URLSearchParams(window.location.search).get("followers")
+    var followers = Math.round(Number(followersinput))
     document.getElementById("followers").innerHTML = "You have "+String(followers)+" followers"
     
-    if (Number(followers) <= 75000){
-        if (Number(followers) <= 500){
-            document.getElementById("dots").innerHTML ='<p class="dot-big"></p>'.repeat(Number(followers) );
+    if (followers<= 75000){
+        if (followers<= 500){
+            document.getElementById("dots").innerHTML ='<p class="dot-big"></p>'.repeat(followers);
 
         };
 
-        if (Number(followers) >= 1000){
-            document.getElementById("dots").innerHTML ='<p class="dot-middle"></p>'.repeat(Number(followers) );
+        if (followers>= 1000){
+            document.getElementById("dots").innerHTML ='<p class="dot-middle"></p>'.repeat(followers);
 
         };
 
-        if (Number(followers) >= 5000){
-            document.getElementById("dots").innerHTML ='<p class="dot-small"></p>'.repeat(Number(followers) );
+        if (followers>= 5000){
+            document.getElementById("dots").innerHTML ='<p class="dot-small"></p>'.repeat(followers);
 
         };
     }
     
 }
+
 
 
