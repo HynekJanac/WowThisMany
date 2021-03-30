@@ -1,0 +1,15 @@
+.bunchofdots{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(10px,1fr));
+}
+
+.dot{
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: white;
+    color: white;
+    border: solid white;
+
+}

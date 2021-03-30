@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="Universal.css">
     <link rel="stylesheet" href="Root.css">
+    <link rel="stylesheet" href="Vis.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
     <script src="Dark_mode.js"></script>
@@ -44,17 +45,24 @@
     </div>
 
     <main id="vis" style="display: block;">
-        <h1 id="followers" class="heading">You have xxx followers</h1>
+        <h1 id="followers" class="heading" style="margin-top: 5px;">You have xxx followers</h1>
         <h2 class="comparasion" id="comparasion">Half of canda</h2>
         
         <div class="results-wrap">
             <img id="imgvis" class="img" ca src="https://upload.wikimedia.org/wikipedia/commons/9/9a/The_view_from_the_Grandstand_Level_at_New_Yankee_Stadium.jpg" alt="">
             <p id="imagesource" class="imgsource"></p>
-            <button class="button" onclick="revisualize()">Visualize Again</button>
+            <a class="button" href="https://visualizefollowers.netlify.app/">Visualize Again</a>
+            
+            <div class="dots-wraps">
+                <div id="dots" class="bunchofdots">
+       
+                </div>
+            </div>
+
         </div>
 
+        
 
-    </main>
-    
+    </main>    
 </body>
 </html>

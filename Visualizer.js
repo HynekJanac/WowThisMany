@@ -15,6 +15,7 @@ function redirect(){
 function visualization(){
     const followers = new URLSearchParams(window.location.search).get("followers")
     document.getElementById("followers").innerHTML = "You have "+String(followers)+" followers"
+    document.getElementById("dots").innerHTML = Number(followers) * '<p class="dot"></p>';
 
 }
 
