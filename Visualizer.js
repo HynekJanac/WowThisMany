@@ -1,16 +1,19 @@
 
-function visualize(){
+function redirect(){
     value = document.getElementById("form").value
 
     if (isNaN(value) == false){
-        document.getElementById("menu").style.display = "none";
-        document.getElementById("preloader").style.display = "block";
-        document.getElementById("vis").style.display = "block";
-        document.getElementById("followers").innerHTML = "You have " + String(value) + " followers";
+        window.location.replace("https://visualizefollowers.netlify.app/visualization.html?followers=" + String(value));
     }
 
     else{
         document.getElementById("warning").style.display = "block";
     }
+
+}
+
+function visualization(){
+    const followers = Number(urlParams.get('followers'))
+    document.getElementById("followers").innerHTML = "You have "+String(followers)+" followers"
 
 }
