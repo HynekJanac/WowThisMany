@@ -130,9 +130,9 @@ footer a{
 
 @media (max-width: 850px){
     
-    .bunchofdots{
-        padding-left: 5px;
-        padding-right: 5px;
+    #dots{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .form-wrap{
