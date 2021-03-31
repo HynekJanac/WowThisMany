@@ -24,19 +24,22 @@ function visualization(){
     else{
     document.getElementById("followers").innerHTML = "You have "+String(followers)+" followers"
     }
-    if (followers <= 75000){
+    if (followers <= 100000){
         if (followers <= 500){
-            document.getElementById("dots").innerHTML ='<p class="dot-big"></p>'.repeat(followers);
+            document.getElementById("dots").className = "bunchofdots-big";
+            document.getElementById("dots").innerHTML ='<p></p>'.repeat(followers);
 
         };
 
         if (followers >= 501){
-            document.getElementById("dots").innerHTML ='<p class="dot-middle"></p>'.repeat(followers);
+            document.getElementById("dots").className = "bunchofdots-middle";
+            document.getElementById("dots").innerHTML ='<p></p>'.repeat(followers);
 
         };
 
         if (followers >= 5000){
-            document.getElementById("dots").innerHTML ='<p class="dot-small"></p>'.repeat(followers);
+            document.getElementById("dots").className = "bunchofdots-small";
+            document.getElementById("dots").innerHTML ='<p></p>'.repeat(followers);
 
         };
     }
