@@ -80,15 +80,15 @@ function visualization(){
         intro = "Or "
     }
 
-    if (Quatifier >= 0.5 < 0.7){
+    if (Quatifier >= 0.5 && Quatifier < 0.7){
             times = "half of "
         }
 
-    if (Quatifier >= 0.7 < 0.9){
+    if (Quatifier >= 0.7 && Quatifier < 0.9){
         times = "almost "
     }
-
-    if (Quatifier >= 0.9 == 1){
+ //x >= 0.001 && x <= 0.009
+    if (Quatifier >= 0.9 && Quatifier == 1){
         times = " "
     }
 
