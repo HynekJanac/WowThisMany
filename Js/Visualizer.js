@@ -81,7 +81,7 @@ function visualization(){
     }
 
     if (Quatifier >= 0.5 && Quatifier < 0.7){
-            times = "half of "
+            times = "half of the "
         }
 
     if (Quatifier >= 0.7 && Quatifier < 0.9){
