@@ -3,7 +3,7 @@ function redirect(){
     value = document.getElementById("form").value
 
     if (isNaN(value) == false){
-        window.location.replace("https://visualizefollowers.netlify.app/visualization.html?followers=" + String(value));
+        window.location.replace("https://wowthismany.netlify.app/visualization.html?followers=" + String(value));
     }
 
     else{
