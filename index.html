@@ -18,6 +18,7 @@
     <script src="JS/Dark_mode.js"></script>
     <script defer src="JS/Visualizer.js"></script>
     
+    
 </head>
 
 <body>
@@ -27,9 +28,25 @@
     <div class="form-wrap">
         <input id="form" class="form" placeholder="Type in number of your followers" type="Number of your followers">
         <div id="warning" class="warning">Please use only numbers</div>
-        <button class="button" onclick="redirect()">Visualize</button>
+        <button class="button" id="button" onclick="redirect()">Visualize</button>
     </div>
     </main>
+    
+    <script>
+        // Get the input field
+        var input = document.getElementById("form");
+
+        // Execute a function when the user releases a key on the keyboard
+        input.addEventListener("keyup", function(event) {
+        // Number 13 is the "Enter" key on the keyboard
+        if (event.keyCode === 13) {
+            // Cancel the default action, if needed
+            event.preventDefault();
+            // Trigger the button element with a click
+            redirect()
+        }
+        });
+    </script>
 
     
 </body>

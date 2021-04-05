@@ -49,11 +49,19 @@
 
 .img{
     border-radius: 20px;
-    width: 90%;
-    max-height: 1050px;
+    width: 50%;
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.imgsource{
+    color: var(--text-color);
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-size: 15px;
+    font-style: italic;
 }
 
 .button-vis{
@@ -165,7 +173,19 @@ footer a{
         margin-left: auto;
         margin-right: auto;
     
+
+        
+    }
+    .img{
+        border-radius: 20px;
+        width: 100%;
+        margin-top: 0px;
     }
     
+    .imgsource{
+        color: var(--text-color);
+        width: 100%;
+        font-size: 15px;
+    }
     
     }

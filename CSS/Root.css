@@ -10,7 +10,7 @@
 :root[data-theme='dark']{
     --main-color: #FF2D2D;
     --background-color: #FF5757;
-    --secondary-color: #0e0e0e;
+    --secondary-color:#ffffff;
     --text-color: #ffffff;
     --footnote-color: rgba(0, 0, 0, 0.864);
     --grid: 1fr;
