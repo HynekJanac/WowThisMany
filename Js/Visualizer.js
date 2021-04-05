@@ -95,6 +95,9 @@ function visualization(){
     if (Quatifier > 1){
         times = String(Math.round(Quatifier * 100) / 100) + " times "
     }
+    else{
+        times = " "
+    }
 
   
 
