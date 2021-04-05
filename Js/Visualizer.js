@@ -84,20 +84,18 @@ function visualization(){
             times = "half of "
         }
 
-    if (Quatifier >= 0.75 < 0.9){
+    if (Quatifier >= 0.7 < 0.9){
         times = "almost "
     }
 
-    if (Quatifier >= 0.95 == 1){
+    if (Quatifier >= 0.9 == 1){
         times = " "
     }
 
     if (Quatifier > 1){
         times = String(Math.round(Quatifier * 100) / 100) + " times "
     }
-    else{
-        times = " "
-    }
+    
 
   
 
