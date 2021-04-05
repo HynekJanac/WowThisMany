@@ -74,18 +74,18 @@ function visualization(){
     //Adds all the data
     //Adds quatifier
     var Quatifier = followers/closest
-    var intro = "That is the"
+    var intro = "That is "
     tag = String(closest)
     if (followers <= 100000){
         intro = "Or "
     }
 
     if (Quatifier >= 0.5 && Quatifier < 0.7){
-            times = "half of the "
+            times = "half of "
         }
 
     if (Quatifier >= 0.7 && Quatifier < 0.9){
-        times = "almost the "
+        times = "almost "
     }
  //x >= 0.001 && x <= 0.009
     if (Quatifier >= 0.9 && Quatifier == 1){
@@ -93,7 +93,7 @@ function visualization(){
     }
 
     if (Quatifier > 1){
-        times = String(Math.round(Quatifier * 100) / 100) + " times the "
+        times = String(Math.round(Quatifier * 100) / 100) + " times "
     }
     
 
